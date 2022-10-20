@@ -26,6 +26,6 @@ jobs:
     needs: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
       - name: Run RESTful Api test
         run: mvn clean verify
