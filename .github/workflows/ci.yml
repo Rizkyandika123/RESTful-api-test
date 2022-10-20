@@ -24,7 +24,7 @@ jobs:
   test:
     name: test lagi
     needs: Build
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v3
       - name: Run RESTful Api test
