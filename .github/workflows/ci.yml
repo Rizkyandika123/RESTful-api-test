@@ -20,5 +20,12 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-      - name: Run Api test
+
+  test:
+    name: test lagi
+    needs: Build
+    run-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v3
+      - name: Run RESTful Api test
         run: mvn clean verify
