@@ -3,7 +3,7 @@ name: API test
 on:
   push:
     branches: [master]
-  pull-request:
+  pull_request:
     branches: [master]
 
 
